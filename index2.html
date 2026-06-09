@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Retame</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #5774b7, #1e293b);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            list-style: 1.2;
+            margin-bottom: 25px;
+            color: #200d0d;
+
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.8;
+            color: bisque;
+
+        }
+
+        .btn-custom {
+            padding: 15px 35px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 50px;
+            transition: 0.4s;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .btn-secundary-custom {
+            background-color: transparent;
+            border: 2px solid rgb(0, 0, 0);
+            color: white
+        }
+
+        .btn-secundary-custom:hover {
+            background-color: rgba(226, 199, 159, 0.648);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px;
+        }
+
+        .Presentacion-carta {
+            background-color: #1e293b;
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Aplicacion Web Educativa</h1>
+                <p>Plataforma Interactiva para el Aprendizaje de
+                    Conceptos Fundamentales de Programacion Web III
+                    con html y css
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-custom btn-secundary-custom">
+                        Ver Proyectos
+                    </a>
+                    <a href="#" class="btn-custom btn-secundary-custom">
+                        Mas informacion
+                    </a>
+                </div>
+                <div class="Presentacion-carta">
+                    <h2>Caracteristicas principales</h2>
+                    <ul>
+                        <li>Plataforma </li>
+                        <li>Aprendizaje</li>
+                        <li>Interactiva</li>
+                        <li>Gamificacion</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
