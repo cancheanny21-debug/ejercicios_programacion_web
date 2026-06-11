@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.presentation-card {
+    border: none;
+    border-radius: 20px;
+    background: white;
+    backdrop-filter: blur(10px);
+    max-width: 300px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.presentation-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.presentation-card:hover .profile-img {
+    transform: scale(1.1);
+}
+
+.btn {
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+}

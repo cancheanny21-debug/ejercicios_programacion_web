@@ -1,0 +1,16 @@
+:root {
+    --header-bg: #ac4d4d;
+    --slide-btn: #d50000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto sans-serif;
+}
+
+.top-header {
+    height: 70px;
+    background-color: var(--header-bg);
+}
