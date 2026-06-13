@@ -1,0 +1,38 @@
+body {
+    background: rgba(242, 139, 104, 0.601);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock {
+    border: 1px solid #606060;
+    color: rgb(224, 224, 224);
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #222222;
+}
+
+#date {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    user-select: none
+}
+
+.clock ul {
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap: 15px;
+    user-select: none;
+}
