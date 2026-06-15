@@ -29,12 +29,11 @@ function clock() {
     let m = today.getMinutes();
     let s = today.getSeconds();
 
-    const ampmText = h >= 12 ? "PM" : "AM";
+    const ampmText = h >= 24 ? "PM" : "AM";
 
     // Convertir formato de 24 horas a 12 horas
-    h = h % 12;
-    h = h ? h : 12; // el 0 se convierte en 12
-
+    h = h % 24;
+    h = h ? h : 24; // el 0 se convierte en 24
     // Añadir ceros a la izquierda para números menores a 10
     h = String(h).padStart(2, '0');
     m = String(m).padStart(2, '0');
