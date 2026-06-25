@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Operaciones de Números</title>
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="titulo">OPERACIONES DE NUMEROS</h1>
+
+        <form id="formulario-calculadora">
+            <input type="text" id="numero_1" placeholder="Escribe Primer Número" required>
+            <br><br>
+
+            <input type="text" id="numero_2" placeholder="Escribe Segundo Número" required>
+            <br><br>
+
+            <select id="operacion">
+                <option value="suma">Suma (+)</option>
+                <option value="resta">Resta (-)</option>
+                <option value="multiplicacion">Multiplicación (x)</option>
+                <option value="division">División (/)</option>
+            </select>
+            <br><br>
+
+            <input type="submit" value="Calcular" id="enviar">
+        </form>
+
+        <div id="main_id" class="resultados"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
