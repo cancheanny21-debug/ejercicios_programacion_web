@@ -18,7 +18,7 @@ function updateCounter() {
     taskCounter.textContent = `${pendingTasks} tarea${pendingTasks !== 1 ? "s" : ""} pendiente${pendingTasks !== 1 ? "s" : ""}`;
 }
 
-// Renderiza los elementos de la lista dinámicamente
+
 function renderTasks() {
     taskList.innerHTML = "";
 
@@ -36,7 +36,7 @@ function renderTasks() {
             </button>
         `;
 
-        // Permite marcar como completada haciendo clic directo en el texto
+
         li.querySelector('.task-text').addEventListener('click', () => toggleTask(index));
 
         taskList.appendChild(li);
@@ -44,7 +44,7 @@ function renderTasks() {
     updateCounter();
 }
 
-// Captura el envío del formulario sin recargar la página (e.preventDefault)
+
 taskForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const text = taskInput.value.trim();
@@ -56,19 +56,19 @@ taskForm.addEventListener("submit", (e) => {
     }
 });
 
-// Cambia el estado completado/pendiente
-function toggleTask(index) {
+
+window.toggleTask = function (index) {
     tasks[index].completed = !tasks[index].completed;
     saveTasks();
     renderTasks();
 }
 
-// Elimina un ítem específico del array (Splice)
-function deleteTask(index) {
+
+window.deleteTask = function (index) {
     tasks.splice(index, 1);
     saveTasks();
     renderTasks();
 }
 
-// Inicialización inicial al cargar el DOM
+
 renderTasks();
