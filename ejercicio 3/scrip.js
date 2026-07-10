@@ -2,6 +2,6 @@ const nombres = ["Ana", "Luis", "Sofia", "Juan", "Maria", "Carlos", "Lucia", "Da
 console.log(nombres);
 
 nombres.forEach((element, index) => {
-    console.log("el registro:" + index + "es:" + element);
+    console.log("el registro: " + index + " es: " + element);
 });
 

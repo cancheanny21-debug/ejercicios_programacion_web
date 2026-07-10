@@ -2,5 +2,5 @@ const estudiantes = ["Ana", "Luis", "Sofia", "Juan", "Maria", "Carlos", "Lucia",
 console.log(estudiantes.length);
 for (let i = 0; i < estudiantes.length; i++) {
     console.log(estudiantes[i]);
-    console.log("El estudiante" + i + "es" + estuadiantes)
+    console.log("El estudiante " + i + " es " + estudiantes)
 }
